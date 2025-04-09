@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/shopping.svg"
+    />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>khaled</title>
+  </head>
+  <!--  -->
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <ul class="nav-container">
+            <li>
+              <a href="./index.html" class="nav-brand">
+                <img src="./assets/images/shopping.svg" alt="" />
+                <span>khaled</span>
+              </a>
+            </li>
+            <div class="nav-end-container">
+              <li class="nav-link">
+                <a href="./cart.html" class="link-container">
+                  <div class="cart-icon">
+                    <span class="cart-icon-counter" data-count="0">0</span>
+                    <img src="./assets/images/cart.svg" alt="" />
+                  </div>
+                  <span>Cart</span>
+                </a>
+              </li>
+              <li>
+                <div id="sign-container" class="link-container">
+                  <img src="./assets/images/login.svg" alt="" />
+                  <span></span>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="store">
+        <div class="order-confirmed overlay hidden">
+          <div class="order-confirmed-container">
+            <img
+              class="order-confirmed-icon"
+              src="./assets/images/icon-order-confirmed.svg"
+              alt=""
+            />
+            <h2>Order Confirmed</h2>
+            <p>We hope you enjoy your food!</p>
+            <div class="order-confirmed-container-items">
+              <!-- order-confirmed-products-container the place where javaScript add ordered products to the showed receipt once the order confirmed -->
+              <div class="order-confirmed-products-container"></div>
+              <div class="order-confirmed-total">
+                <h3 class="order-confirmed-total-p">order total</h3>
+                <h2 class="cart-total-price">
+                  $<span class="order-confirmed-total-price">46.57</span>
+                </h2>
+              </div>
+            </div>
+            <!-- /order-confirmed-container-items -->
+            <button class="btn-new-order">start new order</button>
+          </div>
+          <!-- /order-confirmed-container -->
+        </div>
+        <!-- /order-confirmed -->
+        <div class="products">
+          <div class="filtering-container">
+            <select class="input-field filter-category" name="" id="">
+              <option value="" hidden>Select Category</option>
+              <option value="All">All</option>
+            </select>
+            <input class="input-field" placeholder="Search" type="search" />
+          </div>
+          <h1>Desserts</h1>
+          <!-- products-container is the place where cards added from the JSON file -->
+          <div class="products-container"></div>
+          <!-- /products-container -->
+        </div>
+        <!-- /products -->
+        <div class="shopping-cart">
+          <div class="cart-container">
+            <h2 class="cart-container-title">
+              Your Cart (<span class="cart-quantity">0</span>)
+            </h2>
+            <img
+              class="cart-empty"
+              src="./assets/images/illustration-empty-cart.svg"
+              alt=""
+            />
+            <h4 class="cart-empty">Your added items will appear here</h4>
+            <!-- cart-items is the container where ordered products will be placed -->
+            <div class="cart-items"></div>
+
+            <div class="order-items hidden">
+              <div class="cart-total">
+                <h3 class="cart-total-p">order total</h3>
+                <h2 class="cart-total-price">
+                  $<span class="cart-total-price-value">46.57</span>
+                </h2>
+              </div>
+              <div class="carbon-delivery">
+                <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+                <p class="carbon-icon">This is a carbon natural delivery</p>
+              </div>
+              <div class="order-btn">confirm order</div>
+            </div>
+            <!-- /order-items -->
+          </div>
+          <!-- /cart-container -->
+        </div>
+        <!-- /shopping-cart -->
+      </div>
+      <!-- /store -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

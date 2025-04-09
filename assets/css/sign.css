@@ -1,0 +1,33 @@
+body {
+  background-color: #000000;
+}
+.form-image {
+  background-image: url("../images/store.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.btn-bg-color {
+  background-color: #c83b0e;
+  color: #fff;
+  font-weight: bold;
+  &:hover {
+    background-color: #b53206;
+    color: #fff;
+  }
+}
+
+.form-control:focus {
+  box-shadow: 0 0 10px #e17e5c;
+  border-color: #f15723; /* Optional: reset the border color */
+}
+
+@media (max-width: 576px) {
+  .form-image {
+    clip-path: none;
+    height: 40vh;
+  }
+}

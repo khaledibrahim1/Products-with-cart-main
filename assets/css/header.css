@@ -1,0 +1,70 @@
+/* General Styles ///////////////////////////////////////////// */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+}
+/* Nav Style */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  color: #c83b0e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  & span {
+    margin-top: 15px;
+  }
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  height: 80px;
+  background-color: #f8f4ec;
+}
+.nav-end-container {
+  display: flex;
+  gap: 20px;
+}
+.link-container {
+  display: flex;
+  cursor: pointer;
+  gap: 5px;
+  align-items: center;
+  font-size: 20px;
+  color: #c83b0e;
+}
+.cart-icon {
+  position: relative;
+}
+.cart-icon-counter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.cart-icon-counter {
+  font-size: small;
+}
+
+@media (max-width: 576px) {
+  .nav-container {
+    padding: 0 10px;
+  }
+  .nav-end-container {
+    gap: 5px;
+  }
+  .link-container {
+    gap: 2px;
+    font-size: 15px;
+  }
+}
