@@ -31,3 +31,13 @@ body {
     height: 40vh;
   }
 }
+.form-label{
+  color: #c83b0e;
+  font-weight: bold;
+}
+.register
+{
+  color: #c83b0e;
+  font-weight: bold;
+  text-decoration: underline;
+}
