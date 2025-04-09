@@ -55,7 +55,7 @@ select {
 
 /* Store Page Styles ///////////////////////////////////////// */
 .store {
-  background-color: #fcf8f5;
+  background-color: #fbfdff28;
   padding: 80px 0px 80px 80px;
   display: flex;
   justify-content: space-between;
@@ -236,6 +236,7 @@ select {
 }
 .card-price {
   color: gray;
+  font-size: 25px;
 }
 /* Cart Styles /////////////////////////////////////////////////// */
 .shopping-cart {
@@ -257,7 +258,7 @@ select {
   min-width: 350px;
   flex: 1 1 350px;
   width: 70%;
-  background-color: #fff;
+  background-color: #d437d417;
   border-radius: 10px;
 }
 .order-items {

@@ -1,6 +1,6 @@
 /* General Style */
 body {
-  background-color: #000000;
+  background-color: #ececec;
 }
 .favorite-title-container {
   color: #c83b0e;
@@ -41,15 +41,15 @@ small {
 }
 
 .table-warning {
-  --bs-table-color: #000;
-  --bs-table-bg: #fff3cd;
-  --bs-table-border-color: #ccc2a4;
-  --bs-table-striped-bg: #f2e7c3;
-  --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6dbb9;
-  --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ece1be;
-  --bs-table-hover-color: #000;
+  --bs-table-color: #ffffff;
+  --bs-table-bg: #d437d43b;
+  --bs-table-border-color:  #d437d43b;
+  --bs-table-striped-bg: #d437d43b;
+  --bs-table-striped-color: #ffffff;
+  --bs-table-active-bg:  #5223523b;
+  --bs-table-active-color: #130909;
+  --bs-table-hover-bg:  #411c413b;
+  --bs-table-hover-color: #991212;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
